@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPaddingLeft="10dp"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingBottom="8dp"
+    card_view:contentPaddingRight="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:theme="@style/AlertDialog.AppCompat"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="school"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvschool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/name_holder"
+            android:layout_below="@+id/tvschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name..."/>
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tvname"
+            android:layout_below="@+id/name_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name..."/>
+
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/number_holder"
+            android:layout_below="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number..."/>
+
+        <TextView
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvnumber"
+            android:layout_below="@+id/number_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name..."/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_delete"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            card_view:backgroundTint="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_gal_trash"
+            app:fabSize="mini"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

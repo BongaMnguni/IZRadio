@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".SubscribeActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/add_member"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/sub_name"
+             android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sub_surname"
+            android:hint="Surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sub_date_of_birth"
+            android:hint="DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sub_school_name"
+            android:hint="School Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:id="@+id/btn_subscribe"
+            android:text="Join"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/formLayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingLeft="3dp"
+            android:layout_gravity="center_horizontal"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingRight="3dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:theme="@style/AlertDialog.AppCompat">
+
+            <ImageView
+                android:src="@drawable/pdf_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/download_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download The IZ Radio Learner Admission Form"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            card_view:backgroundTint="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_home"
+            app:fabSize="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

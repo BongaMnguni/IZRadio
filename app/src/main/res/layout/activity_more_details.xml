@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".MoreDetails">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="6dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:id="@+id/more_name"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:paddingBottom="15dp"
+                android:layout_below="@+id/more_name"
+                android:id="@+id/more_image"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"/>
+            <TextView
+                android:layout_below="@+id/more_image"
+                android:id="@+id/more_message"
+                android:text="Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/more_message"
+                android:id="@+id/more_date"
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

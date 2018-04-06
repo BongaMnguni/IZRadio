@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPaddingLeft="3dp"
+    card_view:contentPaddingTop="5dp"
+    card_view:contentPaddingBottom="5dp"
+    card_view:contentPaddingRight="3dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:theme="@style/AlertDialog.AppCompat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/gallery_image"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

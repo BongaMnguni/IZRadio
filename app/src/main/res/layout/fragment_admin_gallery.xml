@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/izradio"
+    tools:context="izradio.payghost.com.AdminGalleryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/layout_gallery"
+        android:padding="16dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_choose_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/button_background"
+            android:text="Choose file"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <Button
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:padding="12dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_gallery_upload"
+            android:background="@drawable/button_background"
+            android:text="Upload"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/gallery_view"
+            android:layout_below="@+id/btn_gallery_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

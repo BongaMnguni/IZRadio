@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/bankLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/bank_color"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iz Radio Bank Details"/>
+
+
+
+    <TextView
+        android:id="@+id/underline"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline"/>
+
+    <FrameLayout
+        android:layout_below="@id/underline"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/underline"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ITHALA"/>
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/bankname"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 87984764"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/accnumber"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Ulundi"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/branch"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 751330"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+<FrameLayout
+    android:id="@+id/frame"
+    android:layout_below="@id/underline"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/bankname"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BANK NAME"/>
+
+    <TextView
+        android:id="@+id/accnumber"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bankname"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT No."/>
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/accnumber"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BRANCH"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/branch"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BRANCH CODE"/>
+
+
+
+</LinearLayout>
+</FrameLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/acc"
+        android:layout_below="@id/frame"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Name"/>
+
+    <TextView
+        android:id="@+id/under"
+        android:layout_below="@+id/acc"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/under"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izingane Radio Foundation"/>
+
+</RelativeLayout>

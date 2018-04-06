@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/izradio"
+    android:padding="5dp"
+    tools:context="izradio.payghost.com.AdminNewsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_news"
+        android:background="#fff"
+        android:paddingBottom="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textCapWords"
+                android:hint="Title" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/layout"
+            android:id="@+id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:src="@drawable/defaultphoto"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/desLayout"
+            android:layout_below="@+id/browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/input_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:inputType="text"
+                android:hint="Message" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/desLayout_price"
+            android:layout_below="@+id/desLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/input_sender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:inputType="text"
+                android:hint="Presenter (person)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_below="@+id/sp_category"
+            android:id="@+id/btnPost"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"/>
+
+    </LinearLayout>
+</ScrollView>

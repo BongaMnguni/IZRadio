@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_imae"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:paddingTop="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IZ Online Radio is the next biggest and urban digital platform based in Africa’s richest square mile. Taking it’s users and listeners to the future with an offering of innovative,news, fresh and groundbreaking entertainment audio."/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The web has found their new streaming partner in IZ Online Radio Online with nothing but the best, cutting-edge and unsurpassed audio and visual content."/>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our channel packages an inspiring line-up of top African stars and celebrity personalities in a creative environment that fully embraces the digital evolution."/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

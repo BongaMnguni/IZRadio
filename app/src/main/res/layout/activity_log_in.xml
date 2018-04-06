@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edUsername_layout"
+            android:layout_width="match_parent"
+            android:hint="Username"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edUsername"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            android:layout_below="@+id/edUsername_layout"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:hint="Password"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_below="@+id/password_layout"
+            android:id="@+id/btnLogin"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SignIn"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center_horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:theme="@style/AlertDialog.AppCompat">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            android:padding="8dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:theme="@style/AlertDialog.AppCompat">
+            <TextView
+                android:id="@+id/txtsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

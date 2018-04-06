@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="izradio.payghost.com.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_donate"
+        android:orderInCategory="100"
+        android:title="Donate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_subscribe"
+        android:orderInCategory="100"
+        android:title="Become A Member"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_logIn"
+        android:orderInCategory="100"
+        android:title="LogIn"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never" />
+
+    <item
+        android:icon="@drawable/tab_document"
+        android:id="@+id/action_media"
+        android:orderInCategory="100"
+        android:title="Media"
+        app:showAsAction="always" />
+
+</menu>

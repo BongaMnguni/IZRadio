@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:theme="@style/AlertDialog.AppCompat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/noimage"
+
+            android:paddingBottom="15dp"
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"/>
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/tvShowName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Name" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Date" />
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/ads_share"
+            card_view:srcCompat="@drawable/ic_menu_share"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:maxLength="16"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:layout_below="@+id/imgPost"
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:text="Message" />
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
